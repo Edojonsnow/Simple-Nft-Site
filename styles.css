@@ -1,0 +1,487 @@
+
+#welcome-section {
+
+background-color: black;
+}
+
+body{
+  background-color: #000000;
+}
+h1{
+  font-family: 'Zen Dots', cursive;
+}
+
+.logo{
+  font-family: 'Zen Dots', cursive;
+font-weight: 700;
+  color: whitesmoke;
+}
+.logo:hover{
+  color:#BF81FF;
+}
+
+a{
+  outline: 0;
+}
+
+/* .social-media-icons{
+  margin-right:50px ;
+}
+ 
+.social-media-icons .icon{
+  width:40px;
+  margin: 0 50px ;
+}
+.icon:hover{
+  transform: scale(1.2);
+  transition: 0.5s;
+} */
+
+ .topnav {
+  margin-top: 20px;
+ display: flex;
+ justify-content: space-between;
+} 
+
+
+.topnav a:hover{
+  
+  background-image: linear-gradient(45deg,#af4261, #f3ec78);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+   background-clip: text;
+ 
+}
+ 
+ 
+
+.header .text{
+font-size: 140px;
+font-family: 'Zen Dots', cursive;
+font-weight: 700;
+background: #CA4246;
+background-color: #CA4246;
+background: conic-gradient(
+  #837DFF 16.666%, 
+  #837DFF 16.666%, 
+  #C0EEE4 33.333%, 
+  #C0EEE4 33.333%, 
+  #C0EEE4 50%, 
+  #B3FFAE 50%, 
+  #B3FFAE 66.666%, 
+  #BF81FF 66.666%, 
+  #BF81FF 83.333%, 
+  #BF81FF 83.333%);
+
+/* Set thee background size and repeat properties. */
+background-size: 57%;
+background-repeat: repeat;
+
+/* Use the text as a mask for the background. */
+/* This will show the gradient as a text color rather than element bg. */
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent; 
+
+/* Animate the text when loading the element. */
+/* This animates it on page load and when hovering out. */
+animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+cursor: pointer;
+}
+
+/* Add animation on hover. */
+.header .text:hover {
+animation: rainbow-text-animation 0.5s ease forwards;
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation {
+0% {
+  background-size: 57%;
+  background-position: 0 0;
+}
+20% {
+  background-size: 57%;
+  background-position: 0 1em;
+}
+100% {
+  background-size: 300%;
+  background-position: -9em 1em;
+}
+}
+
+/* Move the background and make it smaller. */
+/* Animation shown when entering the page and after the hover animation. */
+@keyframes rainbow-text-animation-rev {
+0% {
+  background-size: 300%;
+  background-position: -9em 1em;
+}
+20% {
+  background-size: 57%;
+  background-position: 0 1em;
+}
+100% {
+  background-size: 57%;
+  background-position: 0 0;
+}
+}
+
+
+
+
+.header-subtext{
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+font-weight: 300;
+}
+
+.header{
+  padding: 5% 0 2%;
+  
+}
+.welcome-text{
+  text-align: center;
+ 
+}
+.header-subtext{
+  width: 50%;
+}
+.project-ava-subtext{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#welcome-section{
+  height: 100vh;
+}
+/* BACKSTORY SECTION */
+.backstory{
+ 
+  margin: 10% auto;
+  text-align: center;
+  color: whitesmoke;
+  width: 50%;
+}
+.backstory-text{
+  line-height: 1.2;
+  font-family: 'Space Grotesk', sans-serif;
+}
+.backstory-title{
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.backstory-border{
+ border-image: linear-gradient(to left, turquoise, greenyellow) 1 0;
+ border: 4px solid;
+ padding: 2rem;
+ border-top-color: #837DFF;
+ border-bottom-color:#837DFF;
+ border-left-color: #000000;
+ border-right-color:#000000;
+}
+
+
+
+
+
+/* CARDS SECTION */
+
+#cards-section{
+  background-color: #000000;
+  background-image: url("images/projectAva.jpeg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.cards-div{
+  padding-top: 2%;
+  padding-bottom: 10%;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items: center;
+  justify-content: space-around;
+}
+.slider-poster{
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Zen Dots', cursive;
+  padding:7%;
+}
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+ width: 100%;
+  animation: bannermove 20s linear infinite;
+  padding-bottom: 10%;
+  
+}
+
+
+.ava-image{
+  width: 12rem;
+  height: 200px;
+ position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+  border-radius: 50%;
+}
+.ava-image:hover{
+  top: -20px;
+}
+
+
+
+
+.card{
+  background-color: #000000;
+  color: whitesmoke;
+  width: 22rem;
+  height: 22rem;
+  padding :15px;
+  border: 1.5px solid whitesmoke;
+  border-radius: 30px;
+}
+.card-title-1,.card-title-2{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+.card-text-1,.card-text-2{
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+#cards-section .card:hover{
+  background-color: whitesmoke;
+  color: #000000;
+  border: 2px solid black;
+  border-radius: 50px;
+  transform: scale(1.2);
+  transition: 1s;
+}
+
+
+#fourth-section{
+background-color: #000000;
+color: whitesmoke;
+height: 100vh;
+}
+
+
+
+/* SLIDER SECTION */
+
+
+
+.fourth-section{
+  display: flex;
+  padding: 100px 50px;
+ 
+  align-items: center;
+  justify-content: space-around;
+}
+.left-text{
+  width: 40%;
+  margin-right: 50px;
+}
+.right-text{
+  width: 60%;
+  
+}
+
+
+.left-card, .right-card{
+  
+  height: 40vh;
+}
+
+.right-card{
+  width: 70%;
+margin-left:5px;
+background-color: whitesmoke;
+color: #000000;
+border: 2px solid black;
+border-radius: 50px;
+}
+
+
+.hello {
+  background: black;
+  overflow: hidden;
+}
+.hello span {
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+  
+
+
+
+
+
+/* Slideshow container */
+.arrow-gif{
+  border-radius: 50%;
+  width: 50px;
+  display: none; 
+}
+
+.icon{
+  color: whitesmoke;
+  margin: 15px 20px;
+}
+.icon:hover{
+  color: #837DFF;
+}
+
+
+ .footer-icons{
+  margin: 10px 0;
+display: flex;
+align-items: center;
+justify-content: center;
+ }
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+  .icon{
+   font-size: 25px;
+  }
+.welcome-text .container{
+  scroll-snap-type:  y mandatory;
+}
+.project-ava-subtext{
+  scroll-snap-align: start;
+  
+}
+  .arrow-gif{
+    display:block;
+    margin: 0 auto;
+    position: relative;
+    bottom: 200px;
+  }
+
+  .logo{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 10px;
+  }
+
+  .social-media-icons{
+    display: flex;
+  }
+  .social-media-icons .icon{
+    width:30px;
+    margin:0 15px ;
+  }
+  .header-text .text{
+    font-size: 60px;
+    height: 100vh;
+    padding-top: 50%;
+  }
+  .header-subtext{
+    width: 75%;
+    font-size: 25px;
+  }
+  .backstory{
+    width: 75%;
+    margin-top: 100%;
+  }
+  .backstory-text{
+    font-size: 18px;
+  }
+  .backstory-title{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  
+.slider {
+  padding-top: 10%;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.ava-image{
+  border-radius: 50%;
+  top: 0;
+  transition: 0;
+}
+.ava-image:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.slider-image{
+  margin: 5px;
+}
+  
+  
+
+  #cards-section {
+    margin-top: 25%;  
+  }
+  .cards-div{
+    padding-top: 7%;
+    padding-bottom: 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-around;
+  }
+ 
+  .card-text-1,.card-text-2{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    text-align: center;
+  }
+  #cards-section .card:hover{
+    background-color: whitesmoke;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 50px;
+    transform: none;
+  }
+  .card{
+    margin: 15px;
+  }
+.card-title-1,.card-title-2{
+  font-size: 2rem;
+  text-align: center;
+}
+.card-body{
+  padding-top: 50px;
+}
+.card-1 .card-body{
+  padding-top: 25%;
+}
+
+  
+}
